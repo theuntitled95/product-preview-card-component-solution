@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="images/favicon-32x32.png"
+    />
+
+    <title>Frontend Mentor | Product preview card component</title>
+    <link rel="stylesheet" href="src/output.css" />
+    <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+    <style>
+      .attribution {
+        font-size: 11px;
+        text-align: center;
+      }
+      .attribution a {
+        color: hsl(228, 45%, 44%);
+      }
+    </style>
+  </head>
+  <body class="bg-cream font-sans text-sm grid place-items-center">
+    <div
+      class="rounded-lg overflow-hidden bg-white mobile:w-[350px] desktop:w-[580px] my-4 grid grid-cols-1 desktop:grid-cols-2"
+    >
+      <div class="w-full">
+        <img
+          class="w-full desktop:hidden"
+          src="images/image-product-mobile.jpg"
+          alt=""
+        />
+        <img
+          class="w-full desktop:block hidden"
+          src="images/image-product-desktop.jpg"
+          alt=""
+        />
+      </div>
+      <div class="flex flex-col p-6 desktop:p-8 desktop:justify-between">
+        <h2
+          class="uppercase text-dark-grayish-blue [letter-spacing:4px] text-xs"
+        >
+          Perfume
+        </h2>
+        <h1
+          class="font-serif font-bold text-3xl text-very-dark-blue my-4 leading-7"
+        >
+          Gabrielle Essence Eau De Parfum
+        </h1>
+        <p class="text-dark-grayish-blue">
+          A floral, solar and voluptuous interpretation composed by Olivier
+          Polge, Perfumer-Creator for the House of CHANEL.
+        </p>
+        <div class="flex gap-4 items-center mt-6 mb-4">
+          <span class="font-serif font-bold text-dark-cyan text-3xl"
+            >$149.99</span
+          ><span class="text-dark-grayish-blue line-through">$169.99</span>
+        </div>
+        <a
+          href=""
+          class="rounded-lg bg-dark-cyan hover:bg-very-dark-blue text-white py-4 flex justify-center items-center gap-3"
+          ><img
+            src="images/icon-cart.svg"
+            alt=""
+            class="w-4 h-4 font-bold"
+          />Add to Cart</a
+        >
+      </div>
+    </div>
+
+    <div class="attribution">
+      Challenge by
+      <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+        >Frontend Mentor</a
+      >. Coded by <a href="https://github.com/theuntitled95">Talha Hussain</a>.
+    </div>
+  </body>
+</html>
